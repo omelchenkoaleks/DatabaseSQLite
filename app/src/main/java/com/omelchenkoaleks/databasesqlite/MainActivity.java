@@ -10,6 +10,7 @@ import android.view.View;
 import com.omelchenkoaleks.databasesqlite._001_sql_lite_intro.SqlLiteIntroActivity;
 import com.omelchenkoaleks.databasesqlite._002_insert_or_delete.InsertOrDeleteActivity;
 import com.omelchenkoaleks.databasesqlite._003_selecting.SelectingActivity;
+import com.omelchenkoaleks.databasesqlite._004_sql_joins.SqlJoinsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.selection_button:
                 Intent selectingIntent = new Intent(this, SelectingActivity.class);
                 startActivity(selectingIntent);
+                break;
+
+            case R.id.sql_joins_button:
+                Intent joinsIntent = new Intent(this, SqlJoinsActivity.class);
+                startActivity(joinsIntent);
                 break;
         }
     }

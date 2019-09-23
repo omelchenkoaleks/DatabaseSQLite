@@ -19,4 +19,5 @@
     <string name="region">Region</string>
     <string name="selecting">Selecting</string>
     <string name="sort">Sort</string>
+    <string name="sqlite_joins">SQLite joins</string>
 </resources>

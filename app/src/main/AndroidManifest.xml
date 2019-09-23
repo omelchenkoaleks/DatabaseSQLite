@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="._003_selecting.SelectingActivity"></activity>
+        <activity android:name="._004_sql_joins.SqlJoinsActivity"></activity>
+        <activity android:name="._003_selecting.SelectingActivity" />
         <activity android:name="._002_insert_or_delete.InsertOrDeleteActivity" />
         <activity android:name="._001_sql_lite_intro.SqlLiteIntroActivity" />
         <activity android:name=".MainActivity">
