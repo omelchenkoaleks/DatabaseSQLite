@@ -10,4 +10,13 @@
     <string name="update">Update</string>
     <string name="delete">Delete</string>
     <string name="insert_or_delete">Insert or Delete</string>
+    <string name="countries">Countries</string>
+    <string name="all_notes">All notes</string>
+    <string name="function">Function</string>
+    <string name="people">People</string>
+    <string name="population_by_region">Population by region</string>
+    <string name="having">Having</string>
+    <string name="region">Region</string>
+    <string name="selecting">Selecting</string>
+    <string name="sort">Sort</string>
 </resources>

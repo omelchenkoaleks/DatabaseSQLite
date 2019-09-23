@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="._003_selecting.SelectingActivity">
+
+    <TextView
+        android:id="@+id/countries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/countries"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all_notes_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/all_notes"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countries" />
+
+    <EditText
+        android:id="@+id/function_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_notes_button" />
+
+    <Button
+        android:id="@+id/function_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/function"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/function_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/function_edit_text" />
+
+    <EditText
+        android:id="@+id/people_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/function_edit_text" />
+
+    <Button
+        android:id="@+id/people_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/people"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/people_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/people_edit_text" />
+
+    <Button
+        android:id="@+id/population_by_region_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/population_by_region"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/people_edit_text" />
+
+    <EditText
+        android:id="@+id/population_by_region_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/population_by_region_button" />
+
+    <Button
+        android:id="@+id/having_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/having"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/population_by_region_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/population_by_region_edit_text" />
+
+    <RadioGroup
+        android:id="@+id/sort_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/population_by_region_edit_text" >
+
+        <RadioButton
+            android:id="@+id/name_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <RadioButton
+            android:id="@+id/people_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/people" />
+
+        <RadioButton
+            android:id="@+id/region_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/region" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sort_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort"
+        app:layout_constraintBottom_toBottomOf="@+id/sort_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sort_radio_group" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
