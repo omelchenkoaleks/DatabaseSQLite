@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.omelchenkoaleks.databasesqlite._001_sql_lite_intro.SqlLiteIntroActivity;
+import com.omelchenkoaleks.databasesqlite._002_insert_or_delete.InsertOrDeleteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sql_lite_intro_button:
                 Intent sqlLiteIntroIntent = new Intent(this, SqlLiteIntroActivity.class);
                 startActivity(sqlLiteIntroIntent);
+                break;
+
+            case R.id.insert_or_delete_button:
+                Intent insertOrDeleteIntent = new Intent(this, InsertOrDeleteActivity.class);
+                startActivity(insertOrDeleteIntent);
                 break;
         }
     }

@@ -6,4 +6,8 @@
     <string name="add">Add</string>
     <string name="read">Read</string>
     <string name="clear">Clear</string>
+    <string name="id">ID</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="insert_or_delete">Insert or Delete</string>
 </resources>
