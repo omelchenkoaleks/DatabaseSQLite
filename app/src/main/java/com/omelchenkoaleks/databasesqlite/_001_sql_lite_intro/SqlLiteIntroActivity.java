@@ -63,6 +63,7 @@ public class SqlLiteIntroActivity extends AppCompatActivity implements View.OnCl
 
         switch (v.getId()) {
 
+            // КАК ВСТАВИТЬ ЗАПИСЬ
             case R.id.add_intro_button:
                 Log.d(TAG, "Insert in myTable: ");
 
@@ -75,6 +76,7 @@ public class SqlLiteIntroActivity extends AppCompatActivity implements View.OnCl
                 Log.d(TAG, "row inserted, ID = " + rowID); // смотрим id полученной строки с данными
                 break;
 
+            // КАК СЧИТАТЬ ВСЕ ЗАПИСИ
             case R.id.read_intro_button:
                 Log.d(TAG, "--- Rows in myTable ---");
 
@@ -107,6 +109,7 @@ public class SqlLiteIntroActivity extends AppCompatActivity implements View.OnCl
                 }
                 break;
 
+            // КАК ОЧИСТИТЬ ВСЮ ТАБЛИЦУ
             case R.id.clear_intro_button:
                 Log.d(TAG, "--- Clear myTable ---");
 
