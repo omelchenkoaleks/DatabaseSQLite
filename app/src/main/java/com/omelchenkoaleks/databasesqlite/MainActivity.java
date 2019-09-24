@@ -12,6 +12,7 @@ import com.omelchenkoaleks.databasesqlite._002_insert_or_delete.InsertOrDeleteAc
 import com.omelchenkoaleks.databasesqlite._003_selecting.SelectingActivity;
 import com.omelchenkoaleks.databasesqlite._004_sql_joins.SqlJoinsActivity;
 import com.omelchenkoaleks.databasesqlite._005_transactions.TransactionsActivity;
+import com.omelchenkoaleks.databasesqlite._006_insert_transactions.InsertTransactionActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.transactions_button:
                 Intent transactionsIntent = new Intent(this, TransactionsActivity.class);
                 startActivity(transactionsIntent);
+                break;
+
+            case R.id.insert_transactions_button:
+                Intent insertTransactionsIntent = new Intent(this, InsertTransactionActivity.class);
+                startActivity(insertTransactionsIntent);
                 break;
         }
     }

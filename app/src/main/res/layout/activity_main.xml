@@ -59,12 +59,24 @@
         style="@style/StyleMainButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="72dp"
         android:background="@drawable/main_background_buttons"
         android:onClick="onClick"
         android:text="@string/transactions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sql_joins_button" />
+
+    <Button
+        android:id="@+id/insert_transactions_button"
+        style="@style/StyleMainButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/main_background_buttons"
+        android:onClick="onClick"
+        android:text="@string/insert_transactions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactions_button" />
 
     <include
         android:id="@+id/toolbar"

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="._005_transactions.TransactionsActivity"></activity>
+        <activity android:name="._006_insert_transactions.InsertTransactionActivity"></activity>
+        <activity android:name="._005_transactions.TransactionsActivity" />
         <activity android:name="._004_sql_joins.SqlJoinsActivity" />
         <activity android:name="._003_selecting.SelectingActivity" />
         <activity android:name="._002_insert_or_delete.InsertOrDeleteActivity" />
