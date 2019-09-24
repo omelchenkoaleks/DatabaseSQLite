@@ -33,9 +33,20 @@ public class TransactionsActivity extends AppCompatActivity {
     }
 
     private void myActions() {
+//        mDatabase = mDBHelper.getWritableDatabase();
+//        delete(mDatabase, TABLE_NAME);
+//        insert(mDatabase, TABLE_NAME, "value_1");
+//        read(mDatabase, TABLE_NAME);
+//        mDBHelper.close();
+
         mDatabase = mDBHelper.getWritableDatabase();
         delete(mDatabase, TABLE_NAME);
+        mDatabase.beginTransaction();
         insert(mDatabase, TABLE_NAME, "value_1");
+        mDatabase.setTransactionSuccessful();
+        insert(mDatabase, TABLE_NAME, "value_2");
+        mDatabase.endTransaction();
+        insert(mDatabase, TABLE_NAME, "value_3");
         read(mDatabase, TABLE_NAME);
         mDBHelper.close();
     }
