@@ -20,4 +20,5 @@
     <string name="selecting">Selecting</string>
     <string name="sort">Sort</string>
     <string name="sqlite_joins">SQLite joins</string>
+    <string name="transactions">Transactions</string>
 </resources>
