@@ -62,6 +62,8 @@ public class TransactionsActivity extends AppCompatActivity {
             insert(mDatabase, TABLE_NAME, "value_2");
             insert(mDatabase, TABLE_NAME, "value_3");
             mDatabase.setTransactionSuccessful();
+
+            read(mDatabase, TABLE_NAME);
         } finally {
             mDatabase.endTransaction();
         }
